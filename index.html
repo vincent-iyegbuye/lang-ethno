@@ -42,6 +42,10 @@
 <section id="intro" class="intro section-space" aria-labelledby="introTitle">
  <div class="container intro-layout"><aside class="section-index"><span>PROLOGUE</span><strong>00</strong><div class="index-line"></div><span>SETTING THE SCENE</span></aside>
  <div class="intro-body reveal"><span class="kicker">WHERE IT BEGAN</span><h2 id="introTitle">One language.<br><em>More than one meaning.</em></h2><p class="intro-text">Growing up in Nigeria, I never really thought about how the words I used every day might sound to someone from another country. Expressions that felt completely natural to me could mean something very different to another listener. After moving to Canada, I began noticing those differences through moments that were sometimes awkward and sometimes funny. Two experiences in particular—a stranger questioning why I said “sorry” and a roommate misunderstanding a joke with my brother—made me think about how I use English. They helped me see that adapting my language does not always mean changing who I am; sometimes it means changing my words, and other times it means explaining them.</p>
+ <figure class="personal-archive-photo" id="canadaPhoto" hidden>
+  <img id="canadaPhotoImage" src="assets/images/canada-winter.webp" width="1200" height="902" alt="A candid winter photograph of me with a companion outdoors in Canada, smiling as snow falls." decoding="async">
+  <figcaption><span>PERSONAL ARCHIVE / CANADA</span> A snowy day during my time in Canada. This personal photograph documents my life there, not the staircase incident or phone call.</figcaption>
+ </figure>
  <div class="origin-line"><span class="origin-city">NIGERIA</span><div class="route-line" aria-hidden="true"><span class="route-plane">✳</span></div><span class="origin-city">CANADA</span></div>
  <p class="editor-note"><span aria-hidden="true">✦</span> As you read, try the interactive scenes and ask yourself what <em>you</em> would have understood.</p>
  </div></div>
@@ -72,4 +76,13 @@
 <dialog id="lightbox" class="lightbox" aria-label="Enlarged artifact"><button class="lightbox-close" type="button" aria-label="Close image">✕</button><img id="lightboxImage" alt="Enlarged view of selected artifact"></dialog>
 <script src="script.js" defer></script>
 <script src="enhancements.js" defer></script>
+<script>
+(function(){
+const photo=document.getElementById('canadaPhoto');
+const img=document.getElementById('canadaPhotoImage');
+if(!photo||!img)return;
+const show=()=>{if(img.naturalWidth>0)photo.hidden=false};
+if(img.complete)show(); else img.addEventListener('load',show,{once:true});
+})();
+</script>
 </body></html>
