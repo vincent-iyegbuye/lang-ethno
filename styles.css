@@ -243,3 +243,15 @@ em { color: var(--green); }
 .voice-film-notes .voice-film-transcript-note{font-size:.75rem;color:var(--muted,#60675f);margin:15px 0 0}
 @media(max-width:850px){.voice-film-panel{grid-template-columns:1fr}.voice-film-video-wrap{min-height:200px}}
 @media(prefers-reduced-motion:reduce){.voice-film video{scroll-behavior:auto}}
+
+/* Author-recorded Statement of Choices */
+.statement-recording{background:#121a17;position:relative;min-height:200px}
+.statement-recording video{width:100%;height:auto;display:block;max-height:580px;object-fit:contain;background:#121a17}
+.statement-recording video[hidden]{display:none}
+.statement-video-fallback{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;min-height:270px;color:#fff;padding:25px}
+.statement-video-fallback[hidden]{display:none}
+.statement-video-fallback span{width:68px;height:68px;border:1px solid #f7f7f2;border-radius:50%;display:grid;place-items:center;font-size:26px}
+.statement-video-fallback strong{font:400 25px var(--serif,Georgia,serif)}
+.statement-video-fallback p{max-width:350px;font-size:13px;line-height:1.6;color:#dce3da}
+.statement-outline{padding-left:20px;line-height:1.7}
+.statement-outline li+li{margin-top:12px}
