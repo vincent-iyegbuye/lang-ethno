@@ -27,3 +27,31 @@ button,a{transition:background .2s,color .2s,transform .2s,box-shadow .2s}button
 @media(max-width:1000px){.hero-grid{gap:30px}.word-ticket strong{font-size:52px}.listener-tabs{flex-wrap:wrap}.journey-inner{align-items:flex-start}}
 @media(max-width:760px){.hero-grid{grid-template-columns:1fr;padding-top:50px}.hero h1{font-size:clamp(58px,13vw,85px)}.world-stage{max-width:470px;width:100%;margin:auto}.hero-bottom{gap:20px}.journey-inner{flex-direction:column;gap:12px}.journey-links{gap:7px}.journey-links a{padding:8px 10px}.section-space{padding-block:55px}.chapter-giant{font-size:175px;top:0}.lab-section,.dialect-lab,.pov-lab{padding:22px}.lab-icon{font-size:30px}.editorial-artifact{transform:none!important;margin:10px 6px 0 0}.listener-card{margin-left:15px}.word-ticket{margin-left:8px}.question-main,.answers,.meaning-display{padding:22px}.hero-description{font-size:15px}.site-nav{background:var(--paper)}.reflect-buttons{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Personal film: a framed screening room with an editorial context card. */
+.voice-film{padding-top:48px;border-top:0;margin-block:24px 90px}
+.voice-film-heading{max-width:760px;margin-bottom:30px}
+.voice-film-heading .kicker{display:inline-block;border:1px solid #ccd8cb;padding:7px 12px;border-radius:30px;font-size:10px}
+.voice-film-heading h3{font-size:clamp(34px,4vw,52px);margin-top:18px}
+.voice-film-panel{grid-template-columns:minmax(0,1.25fr) minmax(300px,.85fr);border:1px solid #d7d9c9;border-radius:20px;overflow:hidden;background:#fff5df;box-shadow:0 20px 50px #143f3c12}
+.voice-film-screen{min-width:0;background:#103d39;display:flex;flex-direction:column;color:#fff9ed}
+.voice-film-toolbar{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 26px;font-size:9px;letter-spacing:.13em;color:#c0d6c9;border-bottom:1px solid #ffffff1c}
+.voice-film-toolbar>span:first-child{display:flex;align-items:center;gap:9px}
+.voice-film-toolbar i{width:7px;height:7px;background:#ff9476;border-radius:50%;flex-shrink:0}
+.voice-film-video-wrap{min-height:0;margin:24px 24px 0;border:1px solid #ffffff25;border-radius:10px;overflow:hidden;background:#102b27;display:block}
+.voice-film-video-wrap video{width:100%;height:auto;max-height:none;aspect-ratio:16/9;object-fit:contain;background:#102b27;display:block}
+.voice-film-caption{padding:25px 28px 30px;flex:1;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.voice-film-caption>span{font-size:9px;letter-spacing:.15em;color:#b7d0bd}
+.voice-film-caption p{font:28px/1.3 Georgia,serif;margin:14px 0 22px;color:#fff9ed}.voice-film-caption em{color:#f9cf62}
+.voice-film-caption a{display:flex;align-items:center;gap:30px;border-bottom:1px solid #94b5a3;padding-bottom:7px;font-size:12px;text-decoration:none;color:#fff9ed}.voice-film-caption a:hover{color:#f9cf62;border-color:#f9cf62}
+.voice-film-notes{padding:35px 32px;justify-content:flex-start;background:radial-gradient(circle at top right,#ffdfb566,transparent 65%),#fff5df}
+.voice-film-number{font-size:10px;color:#825039;letter-spacing:.14em}
+.voice-film-notes blockquote{font-size:clamp(34px,3.2vw,48px);line-height:1.12;margin:22px 0;letter-spacing:-.035em;color:#143f3c}
+.voice-film-notes blockquote em{color:#ad402c;text-decoration:underline;text-decoration-color:#e5b356;text-decoration-thickness:3px;text-underline-offset:7px}
+.voice-film-tags{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 20px}.voice-film-tags span{font-size:10px;letter-spacing:.02em;border-radius:30px;background:#eadfc7;color:#4a5743;padding:6px 11px}
+.voice-film-notes>p{font-size:14px;line-height:1.85;margin-bottom:16px}
+.voice-film-notes details{border:1px solid #d8cdb5;border-radius:9px;background:#fffaf0;padding:14px 16px;margin:2px 0 0}
+.voice-film-notes summary{font-size:12px;line-height:1.6;color:#234f45}.voice-film-notes details[open]{background:#fffdf6}.voice-film-notes details p{font-size:13px}
+.voice-film-notes .voice-film-transcript-note{font-size:11px;line-height:1.7;color:#677064;margin-top:18px;border-left:2px solid #d6bd83;padding-left:12px}
+@media(max-width:850px){.voice-film-panel{grid-template-columns:1fr}.voice-film-caption{padding:24px}.voice-film-caption p{font-size:27px}.voice-film-notes{padding:30px}.voice-film-notes blockquote{max-width:500px;font-size:42px}.voice-film-video-wrap{min-height:0}}
+@media(max-width:480px){.voice-film-toolbar{padding:18px 16px;gap:12px;font-size:8px;letter-spacing:.07em}.voice-film-toolbar>span:last-child{max-width:80px;text-align:right}.voice-film-video-wrap{margin:14px 14px 0}.voice-film-caption{padding:23px 20px}.voice-film-notes{padding:26px 22px}.voice-film-notes blockquote{font-size:37px}.voice-film-panel{border-radius:14px}}
