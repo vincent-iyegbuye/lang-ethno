@@ -444,57 +444,40 @@
         </div>
       </div>
     </section>
-    <section class="statement-section" id="statement">
-      <div class="container statement-layout">
-        <div class="reveal"><span class="kicker">BEHIND THE CHOICES</span>
-          <h2>Why I told<br>the story <em>this way.</em></h2>
-          <p>My audience is my classmates. I chose to keep culturally specific expressions, show contrasting
-            interpretations, and reveal the uncomfortable parts of the story—because those details explain how rhetoric
-            operates in everyday life.</p>
-          <p class="statement-note">The final recording will use my own voice, with a transcript and actual classmate
-            responses added after peer review.</p>
-        </div>
-        <div class="statement-video reveal">
-          <div class="editorial-statement-placeholder"><strong>Statement of Choices</strong>
-            <p>The synthetic draft narration has been removed from this presentation. The final submission requires my
-              own 1:30–2:00 recording and a transcript.</p>
-          </div>
-          <div class="video-label"><span>DRAFT STATEMENT OF CHOICES</span><span>1:30–2:00 REQUIRED</span></div>
-          <details class="transcript">
-            <summary>Read the statement transcript <span aria-hidden="true">+</span></summary>
-            <p class="transcript-copy">For my language autoethnography, I wanted my classmates to understand that
-              speaking the same language does not always mean we attach the same meaning to words. I tell two stories
-              from my time in Canada: when a stranger questioned why I said “sorry” after he fell, and when my roommate
-              misunderstood me joking with my brother over the phone. One language choice I made was keeping the
-              expression “I will show you pepper” instead of immediately replacing it with “I will beat you.” I wanted
-              classmates to hear how the phrase actually sounds in my everyday speech, and then understand the context.
-              One detail I chose to include was the long silence after the stranger questioned my use of “sorry.” I
-              think that silence matters because it shows how embarrassed and uncertain I felt, even though my intention
-              was kind. A risk I took was sharing expressions that might sound aggressive or unusual without their
-              Nigerian context. I tried to address that by including a reconstructed conversation and side-by-side
-              explanations. I have not included a specific classmate response yet, so I plan to ask whether the phrase
-              initially sounds threatening and whether my explanation changes that impression. I will revise this after
-              peer review. Overall, I wanted the essay to show that sometimes I adapt my words so others understand me,
-              and sometimes I explain my words so others understand where I come from.</p>
-          </details>
-          <details class="transcript">
-            <summary>Read the main-points outline <span aria-hidden="true">+</span></summary>
-            <ul>
-              <li>Audience and goal: I want classmates to understand how the same English words can carry different
-                cultural meanings.</li>
-              <li>Language choice: I kept “I will show you pepper” and “Abeg, shift” in Nigerian English so classmates
-                encounter my natural expressions before reading explanations.</li>
-              <li>Content choice: I described the long silence after a stranger questioned my “sorry” because it shows
-                my embarrassment and explains why I changed my wording.</li>
-              <li>Risk and design: My expressions could sound aggressive or confusing, so I added clearly labeled
-                reconstructions, an audience diagram, and side-by-side interpretations.</li>
-              <li>Peer feedback: I will ask classmates whether the expression sounds threatening and whether the
-                explanation changes their interpretation; I will report their actual comments after review.</li>
-            </ul>
-          </details>
+    <section class="statement-section" id="statement" aria-labelledby="statementTitle">
+  <div class="container statement-layout">
+    <div class="reveal">
+      <span class="kicker">BEHIND THE CHOICES</span>
+      <h2 id="statementTitle">Why I told<br>the story <em>this way.</em></h2>
+      <p>My audience is my classmates. I kept Nigerian expressions, preserved moments of misunderstanding, and used photographs, audio, and video to make the choices behind my language visible.</p>
+      <p class="statement-note">In this personal video statement, I reflect on the language and content choices behind the essay. Recording length: 1 minute 48 seconds.</p>
+    </div>
+    <div class="statement-video reveal">
+      <div class="statement-recording">
+        <video id="statementVideo" controls playsinline preload="metadata" width="960" height="540" aria-label="Statement of Goals and Choices recorded by the author" hidden>
+          <source src="assets/video/statement-of-choices.mp4" type="video/mp4">
+          Your browser does not support MP4 video.
+        </video>
+        <div id="statementVideoFallback" class="statement-video-fallback">
+          <span aria-hidden="true">▶</span>
+          <strong>Statement of Goals and Choices</strong>
+          <p>The recording will appear here after the video file is added to the repository.</p>
         </div>
       </div>
-    </section>
+      <div class="video-label"><span>AUTHOR'S VIDEO STATEMENT</span><span>1:48 / REQUIRED 1:30–2:00</span></div>
+      <details class="transcript" open>
+        <summary>Read the written main-points outline</summary>
+        <ol class="statement-outline">
+          <li><strong>Audience and goal:</strong> Help classmates understand how familiar English expressions can carry different cultural meanings.</li>
+          <li><strong>Language choice:</strong> Keep “I will show you pepper today!” and other Nigerian expressions so classmates encounter my actual voice before reading explanations.</li>
+          <li><strong>Content choice:</strong> Include the uncomfortable silence following the staircase encounter, showing how embarrassment influenced my later language choices.</li>
+          <li><strong>Risk and presentation:</strong> Expressions might sound confrontational without context. I used audience comparisons, reconstructed dialogue, and original recordings to invite closer listening.</li>
+          <li><strong>Peer-review response:</strong> The final statement must explain what a real classmate said about that risk and what I learned or changed. This point still needs confirmation against the recording.</li>
+        </ol>
+      </details>
+    </div>
+  </div>
+</section>
   </main>
   <footer class="site-footer">
     <div class="container footer-layout">
@@ -530,6 +513,15 @@
       video.load();
     })();
   </script>
+<script>
+(function(){
+const video=document.getElementById('statementVideo'),fallback=document.getElementById('statementVideoFallback');
+if(!video||!fallback)return;
+video.addEventListener('loadedmetadata',()=>{video.hidden=false;fallback.hidden=true},{once:true});
+video.addEventListener('error',()=>{video.hidden=true;fallback.hidden=false});
+video.load();
+})();
+</script>
 </body>
 
 </html>
