@@ -219,3 +219,27 @@ em { color: var(--green); }
 .personal-archive-photo img {display:block;width:100%;height:auto;max-height:550px;object-fit:contain;background:#e3e6e2;border:1px solid var(--line,#d4d8ce)}
 .personal-archive-photo figcaption {border-bottom:1px solid var(--line,#d4d8ce);padding:12px 0 16px;line-height:1.6;color:var(--muted,#60675f);font-size:.81rem}
 .personal-archive-photo figcaption span {display:block;color:var(--green,#355b46);font-size:.66rem;font-weight:700;letter-spacing:.12em;margin-bottom:5px}
+
+/* Personal phone-call reenactment — original recorded video */
+.voice-film{margin-block:32px 85px;padding:35px 0 12px;border-top:1px solid var(--line,#d4d8ce)}
+.voice-film-heading{max-width:730px;margin-bottom:28px}
+.voice-film-heading h3{font-family:var(--serif,Georgia,serif);font-weight:400;font-size:clamp(2rem,4vw,3.5rem);line-height:1.13;letter-spacing:-.035em;margin:13px 0 16px}
+.voice-film-heading p{color:var(--muted,#60675f);line-height:1.8}
+.voice-film-panel{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(290px,.7fr);gap:0;background:#e9ede6;border:1px solid var(--line,#d4d8ce)}
+.voice-film-video-wrap{background:#151a17;display:flex;align-items:center;justify-content:center;min-height:300px}
+.voice-film-video-wrap video{display:block;width:100%;height:auto;max-height:650px;object-fit:contain;background:#151a17}
+.voice-film-video-wrap video[hidden]{display:none}
+.voice-film-fallback{color:#faf9f5;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:45px 20px;gap:12px}
+.voice-film-fallback[hidden]{display:none}
+.voice-film-fallback span{font-size:2rem;border:1px solid #cfd6ce;border-radius:50%;width:70px;height:70px;display:grid;place-items:center}
+.voice-film-fallback p{color:#c6cec5;font-size:.87rem;max-width:240px}
+.voice-film-notes{padding:clamp(25px,3vw,50px);display:flex;flex-direction:column;justify-content:center}
+.voice-film-number{color:var(--green,#355b46);font-size:.68rem;font-weight:700;letter-spacing:.13em}
+.voice-film-notes blockquote{font:400 clamp(2rem,3vw,3.2rem)/1.1 var(--serif,Georgia,serif);letter-spacing:-.035em;margin:25px 0}
+.voice-film-notes p{font-size:.9rem;line-height:1.75;color:var(--ink,#282d29)}
+.voice-film-notes details{border-top:1px solid #ccd2c8;border-bottom:1px solid #ccd2c8;margin:12px 0;padding:12px 0}
+.voice-film-notes summary{cursor:pointer;font-size:.84rem;font-weight:700}
+.voice-film-notes details p{font-size:.81rem;margin:14px 0 0}
+.voice-film-notes .voice-film-transcript-note{font-size:.75rem;color:var(--muted,#60675f);margin:15px 0 0}
+@media(max-width:850px){.voice-film-panel{grid-template-columns:1fr}.voice-film-video-wrap{min-height:200px}}
+@media(prefers-reduced-motion:reduce){.voice-film video{scroll-behavior:auto}}
