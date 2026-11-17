@@ -1,125 +1,535 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Same Words, Different Worlds: an interactive language autoethnography about Nigerian expressions, cultural context, and finding your voice abroad.">
-<title>Same Words, Different Worlds — An Editorial Language Essay</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="interactive.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Same Words, Different Worlds: an interactive language autoethnography about Nigerian expressions, cultural context, and finding your voice abroad.">
+  <title>Same Words, Different Worlds — An Editorial Language Essay</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="interactive.css">
 </head>
+
 <body>
-<a class="skip-link" href="#intro">Skip to story</a>
-<div class="reading-progress" aria-hidden="true"><div id="readingBar"></div></div>
-<header class="site-header" id="header">
- <a class="brand" href="#top" aria-label="Same Words, Different Worlds homepage"><span class="brand-mark">SW<span>·</span>DW</span><span class="brand-sub">A LANGUAGE STORY</span></a>
- <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
- <nav class="site-nav" id="siteNav" aria-label="Story chapters"><a href="#intro">Introduction</a><a href="#sorry">01 / Sorry</a><a href="#pepper">02 / Pepper</a><a href="#reflection">Reflection</a><a href="#statement">Statement</a></nav>
- <span class="nav-progress" aria-hidden="true"><span id="progressLabel">00%</span> READ</span>
-</header>
-<main>
-<section id="top" class="hero" aria-labelledby="heroTitle">
-  
-  <div class="hero-grid">
-    <div class="hero-content">
-      <div class="eyebrow"><span class="tiny-line"></span> AN INTERACTIVE LANGUAGE AUTOETHNOGRAPHY <span class="eyebrow-star">✳</span></div>
-      <h1 id="heroTitle">Same Words,<br><em>Different</em><br>Worlds<span class="title-dot">.</span></h1>
-      <p class="hero-subtitle">Finding my voice away from home.</p>
-      <p class="hero-description">Two moments in Canada. Two misunderstandings. One question: <strong>when words travel, does their meaning travel with them?</strong></p>
-      <div class="hero-actions"><a class="cta" href="#intro">Enter the story <span aria-hidden="true">↘</span></a><span class="experience-time">An interactive essay · ~8 min read</span></div>
-    </div>
-    <aside class="world-stage" aria-label="Try a different perspective">
-      <div class="stage-route"><span>NIGERIA</span><span aria-hidden="true">— WORDS TRAVEL →</span><span>CANADA</span></div>
-      <div class="word-ticket"><small>ONE WORD. TWO WORLDS.</small><strong>“Sorry.”</strong><p>A little word carrying more than you think.</p></div>
-      <div class="listener-card">
-        <div class="listener-tabs" role="group" aria-label="Choose a perspective"><button type="button" data-listener="intention" aria-pressed="true">What I meant</button><button type="button" data-listener="reception" aria-pressed="false">What he heard</button></div>
-        <div aria-live="polite"><blockquote id="listenerQuote">“I’m concerned about you.”</blockquote><p id="listenerContext">In my upbringing, “sorry” could express sympathy without accepting blame.</p></div>
+  <a class="skip-link" href="#intro">Skip to story</a>
+  <div class="reading-progress" aria-hidden="true">
+    <div id="readingBar"></div>
+  </div>
+  <header class="site-header" id="header">
+    <a class="brand" href="#top" aria-label="Same Words, Different Worlds homepage"><span
+        class="brand-mark">SW<span>·</span>DW</span><span class="brand-sub">A LANGUAGE STORY</span></a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav"
+      aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <nav class="site-nav" id="siteNav" aria-label="Story chapters"><a href="#intro">Introduction</a><a href="#sorry">01
+        / Sorry</a><a href="#pepper">02 / Pepper</a><a href="#reflection">Reflection</a><a
+        href="#statement">Statement</a></nav>
+    <span class="nav-progress" aria-hidden="true"><span id="progressLabel">00%</span> READ</span>
+  </header>
+  <main>
+    <section id="top" class="hero" aria-labelledby="heroTitle">
+
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="tiny-line"></span> AN INTERACTIVE LANGUAGE AUTOETHNOGRAPHY <span
+              class="eyebrow-star">✳</span></div>
+          <h1 id="heroTitle">Same Words,<br><em>Different</em><br>Worlds<span class="title-dot">.</span></h1>
+          <p class="hero-subtitle">Finding my voice away from home.</p>
+          <p class="hero-description">Two moments in Canada. Two misunderstandings. One question: <strong>when words
+              travel, does their meaning travel with them?</strong></p>
+          <div class="hero-actions"><a class="cta" href="#intro">Enter the story <span
+                aria-hidden="true">↘</span></a><span class="experience-time">An interactive essay · ~8 min read</span>
+          </div>
+        </div>
+        <aside class="world-stage" aria-label="Try a different perspective">
+          <div class="stage-route"><span>NIGERIA</span><span aria-hidden="true">— WORDS TRAVEL
+              →</span><span>CANADA</span></div>
+          <div class="word-ticket"><small>ONE WORD. TWO WORLDS.</small><strong>“Sorry.”</strong>
+            <p>A little word carrying more than you think.</p>
+          </div>
+          <div class="listener-card">
+            <div class="listener-tabs" role="group" aria-label="Choose a perspective"><button type="button"
+                data-listener="intention" aria-pressed="true">What I meant</button><button type="button"
+                data-listener="reception" aria-pressed="false">What he heard</button></div>
+            <div aria-live="polite">
+              <blockquote id="listenerQuote">“I’m concerned about you.”</blockquote>
+              <p id="listenerContext">In my upbringing, “sorry” could express sympathy without accepting blame.</p>
+            </div>
+          </div>
+          <p class="stage-caption">↑ Switch perspectives. See what changes.</p>
+        </aside>
       </div>
-      <p class="stage-caption">↑ Switch perspectives. See what changes.</p>
-    </aside></div><div class="hero-bottom"><span>SCROLL TO EXPLORE</span><div class="scroll-cue" aria-hidden="true"><span></span></div><span>VINCENT IYEGBUYE · ENGL 1301-072</span></div>
-</section>
-<aside class="journey-strip" aria-label="Your exploration progress"><div class="container journey-inner"><p id="journeyStatus" role="status">0 / 3 explored · Follow your curiosity.</p><nav class="journey-links" aria-label="Jump to an interactive moment"><a href="#meaningMoment" data-journey="meaning">01 · Choose a meaning</a><a href="#decodeMoment" data-journey="decode">02 · Decode the words</a><a href="#audienceMoment" data-journey="audience">03 · Change the listener</a></nav></div></aside>
-<section id="intro" class="intro section-space" aria-labelledby="introTitle">
- <div class="container intro-layout"><aside class="section-index"><span>PROLOGUE</span><strong>00</strong><div class="index-line"></div><span>SETTING THE SCENE</span></aside>
- <div class="intro-body reveal"><span class="kicker">WHERE IT BEGAN</span><h2 id="introTitle">One language.<br><em>More than one meaning.</em></h2><p class="intro-text">Growing up in Nigeria, I never really thought about how the words I used every day might sound to someone from another country. Expressions that felt completely natural to me could mean something very different to another listener. After moving to Canada, I began noticing those differences through moments that were sometimes awkward and sometimes funny. Two experiences in particular—a stranger questioning why I said “sorry” and a roommate misunderstanding a joke with my brother—made me think about how I use English. They helped me see that adapting my language does not always mean changing who I am; sometimes it means changing my words, and other times it means explaining them.</p>
- <figure class="personal-archive-photo" id="canadaPhoto" hidden>
-  <img id="canadaPhotoImage" src="assets/images/canada-winter.webp" width="1200" height="902" alt="A candid winter photograph of me with a companion outdoors in Canada, smiling as snow falls." decoding="async">
-  <figcaption><span>PERSONAL ARCHIVE / CANADA</span> A snowy day during my time in Canada. This personal photograph documents my life there, not the staircase incident or phone call.</figcaption>
- </figure>
- <div class="origin-line"><span class="origin-city">NIGERIA</span><div class="route-line" aria-hidden="true"><span class="route-plane">✳</span></div><span class="origin-city">CANADA</span></div>
- <p class="editor-note"><span aria-hidden="true">✦</span> As you read, try the interactive scenes and ask yourself what <em>you</em> would have understood.</p>
- </div></div>
-</section>
-<section class="chapter-head first-head" id="sorry" aria-labelledby="sorryTitle"><div class="chapter-head-inner container"><div class="chapter-meta"><span>CHAPTER ONE</span><span class="meta-line"></span><span>EMPATHY &amp; MISUNDERSTANDING</span></div><span class="chapter-giant" aria-hidden="true">01</span><h2 id="sorryTitle">When <em>“sorry”</em><br>didn't mean sorry.</h2><p>What I meant as concern became a question I wasn't ready to answer.</p><a href="#sorryText" class="chapter-scroll">READ CHAPTER <span aria-hidden="true">↘</span></a></div></section>
-<div class="chapter-paper" id="sorryText">
- <div class="container story-grid first-story section-space"><div class="story-writing reveal"><div class="section-small-number">01 / THE ENCOUNTER</div><h3>A word I never had to explain.</h3><p class="story-copy">In Nigeria, I grew up hearing people say “sorry” when someone fell, got hurt, or had something unfortunate happen to them. It was not necessarily an admission that they had caused the problem. It was often a simple way of expressing sympathy, so I learned to use it without thinking much about it. I remember being in Canada when I saw a stranger running on a staircase. He tripped and hurt himself, and I instinctively said, “Sorry.” He looked at me and asked why I was apologizing when I had not done anything to him. I felt embarrassed and confused because his response was the last thing I expected. To me, my words had already communicated concern. To him, they seemed to suggest that I had done something wrong. There was a long, uncomfortable silence. I did not want to make the situation more awkward by explaining the cultural meaning of one word, so I said that I hoped he would get well soon and left.</p></div><aside class="editorial-artifact" aria-label="ARTIFACT 01"><span>ARTIFACT 01 / RECONSTRUCTED MEMORY</span><blockquote>A word said out of concern.</blockquote><p>ARTIFACT 01 Reconstructed account.</p><small>No photograph of the original event is claimed.</small></aside></div>
- <div class="container lab-section reveal" id="meaningMoment"><div class="lab-header"><div><span class="kicker">INTERACTIVE MOMENT 01</span><h3>What would <em>you</em> hear?</h3><p>Before you read what happened next, imagine hearing this from someone you didn't know.</p></div><span class="lab-icon" aria-hidden="true">↗</span></div>
- <div class="meaning-lab"><div class="question-main"><span class="dialogue-speaker">A STRANGER HAS JUST FALLEN. I SAY:</span><span class="big-quote">“Sorry.”</span><p>How would you interpret that word?</p></div><div class="answers" role="group" aria-label="Choose what sorry means"><button type="button" class="answer" data-answer="apology"><span class="answer-num">A</span>I caused this or I am apologizing.<span aria-hidden="true">↗</span></button><button type="button" class="answer" data-answer="concern"><span class="answer-num">B</span>I feel concerned about what happened.<span aria-hidden="true">↗</span></button><div class="answer-feedback" id="sorryFeedback" role="status" aria-live="polite" hidden></div></div></div></div>
- <div class="container story-grid reverse section-space"><div class="story-writing reveal"><div class="section-small-number">02 / THE SILENCE</div><h3>The longest part of the conversation was what I didn't say.</h3><p class="story-copy">The encounter made me notice how much meaning depends on the audience rather than the dictionary definition of a word. I was speaking English to someone who also spoke English, but we were interpreting the situation through different everyday habits. My purpose was to show empathy, and my stance was concerned rather than apologetic. Yet because the conversation was spontaneous and face-to-face, I had no prepared explanation or time to rethink my choice before the stranger reacted. His question changed the tone of what I thought would be a small moment of kindness. The genre mattered too: this was not an apology letter or a formal discussion; it was a brief encounter between strangers in which the meaning of a short response had to be understood immediately. I also think the fact that I did not know him affected what I said next. If it had been someone close to me, I might have explained my intention more comfortably. With a stranger, I chose to leave the misunderstanding unresolved.</p></div><aside class="editorial-artifact" aria-label="ARTIFACT 02"><span>ARTIFACT 02 / RECONSTRUCTED MEMORY</span><blockquote>A memory, reconstructed.</blockquote><p>ARTIFACT 02 Reconstructed dialogue and silence based on memory; wording is approximate.</p><small>No photograph of the original event is claimed.</small></aside></div>
- <div class="container exchange-scene reveal"><div class="scene-header"><span class="kicker">RECONSTRUCTED FROM MEMORY</span><h3>Replay the conversation</h3><p>Press next to reveal the words, one moment at a time.</p></div><div class="exchange-box"><div class="exchange-scene-top"><span>STAIRCASE / CANADA</span><span id="stepCounter">01 / 04</span></div><div class="exchange-messages" id="exchangeMessages" aria-live="polite"><p class="exchange-guide">A stranger trips on the staircase. You approach...</p></div><div class="exchange-actions"><button class="secondary-btn" id="resetExchange" type="button">↺ Restart</button><button class="solid-btn" id="nextExchange" type="button">Next moment <span aria-hidden="true">→</span></button></div></div><p class="media-honesty">This interaction recreates the exchange from memory; it is not an original recording.</p></div>
- <div class="container story-grid section-space"><div class="story-writing reveal"><div class="section-small-number">03 / WHAT CHANGED</div><h3>The words changed.<br>The concern didn't.</h3><p class="story-copy">After that experience, I started using different expressions when someone hurt themselves. I am now more likely to ask, “Are you okay?” or say, “I hope you weren’t hurt,” rather than automatically saying “sorry.” I did not change because I stopped believing that people deserve sympathy. I changed because I learned that people may not hear my concern in the words I grew up using. That is a small example of how moving between cultures has made me more aware of my audience, even in situations where I speak without planning. It also makes me wonder how many ordinary expressions carry meanings that people around us do not recognize. I still associate “sorry” with concern because of my upbringing, but I now have another way to express that same value. The choice is rhetorical: I adjust the wording to preserve my purpose.</p></div><aside class="editorial-artifact" aria-label="ARTIFACT 03"><span>ARTIFACT 03 / RECONSTRUCTED MEMORY</span><blockquote>A word said out of concern.</blockquote><p>ARTIFACT 03 Visual comparison showing a shift in wording while the purpose—expressing concern—remains the same.</p><small>No photograph of the original event is claimed.</small></aside></div>
- <section class="container audio-invite sorry-audio reveal" id="sorryRecording" aria-labelledby="sorryVoiceTitle"><div><span class="kicker">PERSONAL ARTIFACT / ORIGINAL AUDIO</span><h3 id="sorryVoiceTitle">Hear how concern sounds.</h3><p>In this new recording, I explain why I grew up using “sorry” to express concern, and how I began choosing different words in Canada. It is my reflection on the encounter, not audio recorded at the staircase.</p><details class="sorry-transcript"><summary>Read the audio script</summary><div class="transcript-text"><p>Growing up in Nigeria, saying “sorry” doesn't always mean you're apologizing. Sometimes, it's just a way of showing concern when someone gets hurt.</p><p>When I moved to Canada, I once said “sorry” to a stranger who fell on a staircase. He looked confused and asked why I was apologizing when I hadn't done anything.</p><p>Since then, I've learned to say things like “Are you okay?” instead. The words changed, but my intention to show concern stayed the same.</p></div><p class="audio-transcript-note">Text of the recording script. Check against the audio for any differences before final submission.</p></details></div><div class="audio-status has-audio"><div class="audio-card-top"><span>VOICE NOTE / 01</span><span>IN MY OWN WORDS</span></div><div class="audio-art" aria-hidden="true"><span class="audio-quote">“Sorry.”</span><div class="audio-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><p class="audio-card-caption">The words changed.<br><em>The concern stayed.</em></p><audio controls preload="metadata" aria-label="Personal reflection on saying sorry in Nigeria and Canada"><source src="assets/audio/sorry-voice.mp3" type="audio/mpeg"></audio><a class="audio-direct-link" href="assets/audio/sorry-voice.mp3">Open recording directly ↗</a><span class="audio-card-foot">A personal reflection · Vincent Iyegbuye</span></div></section>
-</div>
-<section class="chapter-head second-head" id="pepper" aria-labelledby="pepperTitle"><div class="chapter-head-inner container"><div class="chapter-meta"><span>CHAPTER TWO</span><span class="meta-line"></span><span>HUMOR &amp; BELONGING</span></div><span class="chapter-giant" aria-hidden="true">02</span><h2 id="pepperTitle">“I will show<br>you <em>pepper!</em>”</h2><p>A familiar joke between brothers sounds different to someone listening in.</p><a href="#pepperText" class="chapter-scroll">READ CHAPTER <span aria-hidden="true">↘</span></a></div></section>
-<div class="chapter-paper" id="pepperText"><div class="container story-grid section-space"><div class="story-writing reveal"><div class="section-small-number">04 / ON THE PHONE</div><h3>Just a joke—until someone else heard it.</h3><p class="story-copy">Another experience in Canada showed me a very different response to a misunderstanding. I was on a phone call with my brother, and we were joking and challenging each other the way we often do. At one point I said, “Abeg, shift! You fit shout? I will show you pepper today! Oya, bring your card out make we see!” The words were playful to us, even though they might sound confrontational to someone unfamiliar with the expressions. My Canadian roommate was nearby and heard me talking. He asked why I wanted to put pepper on my brother. I laughed because I had not considered that he might take “show you pepper” literally. I explained that I did not mean actual pepper or physical harm. In that exchange, I meant that I was jokingly going to give my brother a hard time or win our challenge. My roommate found the explanation funny, and he told me he liked my accent and the way I spoke. Instead of ending in discomfort, that misunderstanding became a conversation about a part of my culture.</p></div><aside class="editorial-artifact" aria-label="ARTIFACT 04"><span>ARTIFACT 04 / RECONSTRUCTED MEMORY</span><blockquote>Same words, different listeners.</blockquote><p>ARTIFACT 04 Reconstructed account.</p><small>No photograph of the original event is claimed.</small></aside></div>
-<div class="container dialect-lab reveal" id="decodeMoment"><div class="lab-header"><div><span class="kicker">INTERACTIVE MOMENT 02</span><h3>Decode the <em>conversation.</em></h3><p>Tap each expression to reveal what it meant in the context of my conversation with my brother.</p></div><span class="lab-icon" aria-hidden="true">✳</span></div>
-<div class="dialect-grid"><div class="dialect-list" role="group" aria-label="Select a Nigerian expression"><button type="button" class="dialect-choice active" data-phrase="0" aria-pressed="true"><span>01</span> Abeg, shift!<span aria-hidden="true">↗</span></button><button type="button" class="dialect-choice" data-phrase="1" aria-pressed="false"><span>02</span> You fit shout?<span aria-hidden="true">↗</span></button><button type="button" class="dialect-choice" data-phrase="2" aria-pressed="false"><span>03</span> I will show you pepper today!<span aria-hidden="true">↗</span></button><button type="button" class="dialect-choice" data-phrase="3" aria-pressed="false"><span>04</span> Oya, bring your card out make we see!<span aria-hidden="true">↗</span></button></div><div class="meaning-display" aria-live="polite"><span class="meaning-top">WHAT I WAS COMMUNICATING</span><h4 id="phraseTitle">“Abeg, shift!”</h4><p class="phrase-meaning" id="phraseMeaning">“Please, move!” — a familiar, playful dismissal between us.</p><p id="decodeStatus">0 of 4 expressions explored</p><div class="meaning-rule"></div><p id="phraseNuance">The teasing tone and our shared relationship mattered more than the literal words.</p></div></div></div>
-<div class="container interpretation-layout section-space"><div class="reveal"><aside class="editorial-artifact"><span>FIELD NOTE</span><blockquote>Memory is an artifact, too.</blockquote><p>Reconstructed from the writer’s recollection, not an original recording.</p></aside></div><div class="story-writing reveal"><div class="section-small-number">05 / TWO AUDIENCES</div><h3>The listener changes the meaning.</h3><p class="story-copy">What makes that phone call interesting is that my brother was the person I intended to communicate with, but my roommate became an unintended audience. With my brother, the genre was an informal, teasing conversation built on our shared relationship. My tone was loud and playful, and my purpose was to joke rather than threaten him. Because he understood the expressions and our relationship, I did not need to explain every phrase. The phone call as a medium also mattered: my roommate could hear me speaking, but he did not have the same access to my brother’s replies or the history behind our jokes. Without that context, “I will show you pepper” sounded literal to him. I had to shift from teasing my brother to explaining my language to my roommate. The words themselves did not change, but my stance did—from playful competitor to patient interpreter. His curiosity gave me room to explain what the expression meant instead of treating his confusion as a problem.</p></div></div>
-<div class="container pov-lab reveal" id="audienceMoment"><div class="lab-header"><div><span class="kicker">INTERACTIVE MOMENT 03</span><h3>Same phrase.<br><em>Different ears.</em></h3><p>Select a listener to see how the audience shapes the meaning.</p></div><span class="lab-icon" aria-hidden="true">◉</span></div><div class="pov-grid"><div class="pov-switch" role="group" aria-label="Select an audience"><button class="pov-option active" data-pov="brother" aria-pressed="true"><span class="pov-emoji">✳</span><strong>My brother</strong><small>Intended audience</small></button><button class="pov-option" data-pov="roommate" aria-pressed="false"><span class="pov-emoji">◎</span><strong>My roommate</strong><small>Unintended audience</small></button></div><div class="pov-display" aria-live="polite"><span id="povLabel">MY BROTHER HEARS</span><blockquote id="povQuote">“He's challenging me. We're just joking.”</blockquote><p id="povDetails">A familiar expression within a relationship built on teasing, shared language, and context.</p></div></div></div>
-<div class="container story-grid reverse section-space"><div class="story-writing reveal"><div class="section-small-number">06 / CHOOSING TO EXPLAIN</div><h3>Not every misunderstanding needs a new vocabulary.</h3><p class="story-copy">Comparing these experiences has made me think about when I choose to adapt and when I choose to explain. At the staircase, I stayed quiet because I felt embarrassed and did not know the stranger well enough to continue the conversation. Afterward, I changed the words I used in similar situations. During the phone call, I felt comfortable laughing and explaining because my roommate was familiar to me and seemed curious rather than upset. That conversation reminded me that the way my brother and I speak is part of our relationship, not just a collection of slang phrases. The joking tone, rhythm, and expressions help us recognize each other’s intentions. I also appreciated that my roommate noticed my accent positively. Living away from Nigeria can sometimes make familiar habits stand out in ways I did not expect, but standing out does not always mean I have to hide them. Sometimes my choice is to make my language clearer, and sometimes my choice is to invite another person to understand it.</p></div><aside class="editorial-artifact" aria-label="ARTIFACT 06"><span>ARTIFACT 06 / RECONSTRUCTED MEMORY</span><blockquote>Same words, different listeners.</blockquote><p>ARTIFACT 06 Audience map showing the brother as intended listener and roommate as unintended listener.</p><small>No photograph of the original event is claimed.</small></aside></div>
-<section class="container voice-film reveal" id="brotherVideo" aria-labelledby="brotherVideoTitle">
- <div class="voice-film-heading"><span class="kicker">PERSONAL ARTIFACT / VIDEO REENACTMENT</span><h3 id="brotherVideoTitle">Hear it in my own voice.</h3><p>In this recent recording, I revisit the language I used while joking with my brother. It is a reenactment from memory, <strong>not a recording of the original call</strong>. Listen for the expression and consider how an unfamiliar audience might interpret it.</p></div>
- <div class="voice-film-panel">
-  <div class="voice-film-screen">
-   <div class="voice-film-toolbar"><span><i aria-hidden="true"></i> THE VOICE BEHIND THE WORDS</span><span>PERSONAL ARCHIVE · 02</span></div>
-  <div class="voice-film-video-wrap">
-   <video id="pepperVideo" controls playsinline preload="metadata" width="960" height="540" aria-label="Personal reenactment of the Nigerian expressions from my phone conversation" hidden>
-    <source src="assets/video/pepper-phone-call.mp4" type="video/mp4">
-    Your browser does not support MP4 video.
-   </video>
-   <div id="pepperVideoFallback" class="voice-film-fallback"><span aria-hidden="true">▶</span><strong>Personal video reenactment</strong><p>The recording will appear here when its MP4 file is uploaded.</p></div>
-  </div>
-   <div class="voice-film-caption"><span>MY VOICE. MY EXPRESSION.</span><p>Listen to the tone.<br><em>Then look beyond the words.</em></p><a href="#decodeMoment">Explore the expressions <span aria-hidden="true">↗</span></a></div>
-  </div>
-  <div class="voice-film-notes"><span class="voice-film-number">02 / THE PHONE CALL</span><blockquote>“I will show you <em>pepper</em> today!”</blockquote><div class="voice-film-tags"><span>Playful tone</span><span>Shared context</span></div><p>In the remembered conversation with my brother, this was a playful challenge—not a threat involving actual pepper. My Canadian roommate overheard only my side and interpreted it literally.</p>
-   <details><summary>Read context for the expression</summary><p><strong>Words I remember using:</strong> “Abeg, shift! You fit shout? I will show you pepper today! Oya, bring your card out make we see!”</p><p><strong>Context:</strong> My brother and I were teasing each other over the phone. My roommate asked why I wanted to put pepper on him, and I explained the figurative meaning. This account of the original incident is reconstructed from memory; the new video is a reenactment.</p></details>
-   <details class="video-transcript" open>
-    <summary>Read the video transcript (word for word)</summary>
-    <div class="transcript-text">
-     <p>“Abeg, shift! You fit shout? I will show you pepper today! Oya, bring your card out make we see!”</p>
-     <p>This is something I said while joking with my brother on the phone. My Canadian roommate overheard me and asked why I wanted to put pepper on my brother.</p>
-     <p>I laughed and explained that I wasn't talking about actual pepper. It's just a playful Nigerian expression used to challenge or tease someone.</p>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span>
+        <div class="scroll-cue" aria-hidden="true"><span></span></div><span>VINCENT IYEGBUYE · ENGL 1301-072</span>
+      </div>
+    </section>
+    <aside class="journey-strip" aria-label="Your exploration progress">
+      <div class="container journey-inner">
+        <p id="journeyStatus" role="status">0 / 3 explored · Follow your curiosity.</p>
+        <nav class="journey-links" aria-label="Jump to an interactive moment"><a href="#meaningMoment"
+            data-journey="meaning">01 · Choose a meaning</a><a href="#decodeMoment" data-journey="decode">02 · Decode
+            the words</a><a href="#audienceMoment" data-journey="audience">03 · Change the listener</a></nav>
+      </div>
+    </aside>
+    <section id="intro" class="intro section-space" aria-labelledby="introTitle">
+      <div class="container intro-layout">
+        <aside class="section-index"><span>PROLOGUE</span><strong>00</strong>
+          <div class="index-line"></div><span>SETTING THE SCENE</span>
+        </aside>
+        <div class="intro-body reveal"><span class="kicker">WHERE IT BEGAN</span>
+          <h2 id="introTitle">One language.<br><em>More than one meaning.</em></h2>
+          <p class="intro-text">Growing up in Nigeria, I never really thought about how the words I used every day might
+            sound to someone from another country. Expressions that felt completely natural to me could mean something
+            very different to another listener. After moving to Canada, I began noticing those differences through
+            moments that were sometimes awkward and sometimes funny. Two experiences in particular—a stranger
+            questioning why I said “sorry” and a roommate misunderstanding a joke with my brother—made me think about
+            how I use English. They helped me see that adapting my language does not always mean changing who I am;
+            sometimes it means changing my words, and other times it means explaining them.</p>
+          <figure class="personal-archive-photo" id="canadaPhoto" hidden>
+            <img id="canadaPhotoImage" src="assets/images/canada-winter.webp" width="1200" height="902"
+              alt="A candid winter photograph of me with a companion outdoors in Canada, smiling as snow falls."
+              decoding="async">
+            <figcaption><span>PERSONAL ARCHIVE / CANADA</span> A snowy day during my time in Canada. This personal
+              photograph documents my life there, not the staircase incident or phone call.</figcaption>
+          </figure>
+          <div class="origin-line"><span class="origin-city">NIGERIA</span>
+            <div class="route-line" aria-hidden="true"><span class="route-plane">✳</span></div><span
+              class="origin-city">CANADA</span>
+          </div>
+          <p class="editor-note"><span aria-hidden="true">✦</span> As you read, try the interactive scenes and ask
+            yourself what <em>you</em> would have understood.</p>
+        </div>
+      </div>
+    </section>
+    <section class="chapter-head first-head" id="sorry" aria-labelledby="sorryTitle">
+      <div class="chapter-head-inner container">
+        <div class="chapter-meta"><span>CHAPTER ONE</span><span class="meta-line"></span><span>EMPATHY &amp;
+            MISUNDERSTANDING</span></div><span class="chapter-giant" aria-hidden="true">01</span>
+        <h2 id="sorryTitle">When <em>“sorry”</em><br>didn't mean sorry.</h2>
+        <p>What I meant as concern became a question I wasn't ready to answer.</p><a href="#sorryText"
+          class="chapter-scroll">READ CHAPTER <span aria-hidden="true">↘</span></a>
+      </div>
+    </section>
+    <div class="chapter-paper" id="sorryText">
+      <div class="container story-grid first-story section-space">
+        <div class="story-writing reveal">
+          <div class="section-small-number">01 / THE ENCOUNTER</div>
+          <h3>A word I never had to explain.</h3>
+          <p class="story-copy">In Nigeria, I grew up hearing people say “sorry” when someone fell, got hurt, or had
+            something unfortunate happen to them. It was not necessarily an admission that they had caused the problem.
+            It was often a simple way of expressing sympathy, so I learned to use it without thinking much about it. I
+            remember being in Canada when I saw a stranger running on a staircase. He tripped and hurt himself, and I
+            instinctively said, “Sorry.” He looked at me and asked why I was apologizing when I had not done anything to
+            him. I felt embarrassed and confused because his response was the last thing I expected. To me, my words had
+            already communicated concern. To him, they seemed to suggest that I had done something wrong. There was a
+            long, uncomfortable silence. I did not want to make the situation more awkward by explaining the cultural
+            meaning of one word, so I said that I hoped he would get well soon and left.</p>
+        </div>
+        <aside class="editorial-artifact" aria-label="ARTIFACT 01"><span>ARTIFACT 01 / RECONSTRUCTED MEMORY</span>
+          <blockquote>A word said out of concern.</blockquote>
+          <p>ARTIFACT 01 Reconstructed account.</p><small>No photograph of the original event is claimed.</small>
+        </aside>
+      </div>
+      <div class="container lab-section reveal" id="meaningMoment">
+        <div class="lab-header">
+          <div><span class="kicker">INTERACTIVE MOMENT 01</span>
+            <h3>What would <em>you</em> hear?</h3>
+            <p>Before you read what happened next, imagine hearing this from someone you didn't know.</p>
+          </div><span class="lab-icon" aria-hidden="true">↗</span>
+        </div>
+        <div class="meaning-lab">
+          <div class="question-main"><span class="dialogue-speaker">A STRANGER HAS JUST FALLEN. I SAY:</span><span
+              class="big-quote">“Sorry.”</span>
+            <p>How would you interpret that word?</p>
+          </div>
+          <div class="answers" role="group" aria-label="Choose what sorry means"><button type="button" class="answer"
+              data-answer="apology"><span class="answer-num">A</span>I caused this or I am apologizing.<span
+                aria-hidden="true">↗</span></button><button type="button" class="answer" data-answer="concern"><span
+                class="answer-num">B</span>I feel concerned about what happened.<span
+                aria-hidden="true">↗</span></button>
+            <div class="answer-feedback" id="sorryFeedback" role="status" aria-live="polite" hidden></div>
+          </div>
+        </div>
+      </div>
+      <div class="container story-grid reverse section-space">
+        <div class="story-writing reveal">
+          <div class="section-small-number">02 / THE SILENCE</div>
+          <h3>The longest part of the conversation was what I didn't say.</h3>
+          <p class="story-copy">The encounter made me notice how much meaning depends on the audience rather than the
+            dictionary definition of a word. I was speaking English to someone who also spoke English, but we were
+            interpreting the situation through different everyday habits. My purpose was to show empathy, and my stance
+            was concerned rather than apologetic. Yet because the conversation was spontaneous and face-to-face, I had
+            no prepared explanation or time to rethink my choice before the stranger reacted. His question changed the
+            tone of what I thought would be a small moment of kindness. The genre mattered too: this was not an apology
+            letter or a formal discussion; it was a brief encounter between strangers in which the meaning of a short
+            response had to be understood immediately. I also think the fact that I did not know him affected what I
+            said next. If it had been someone close to me, I might have explained my intention more comfortably. With a
+            stranger, I chose to leave the misunderstanding unresolved.</p>
+        </div>
+        <aside class="editorial-artifact" aria-label="ARTIFACT 02"><span>ARTIFACT 02 / RECONSTRUCTED MEMORY</span>
+          <blockquote>A memory, reconstructed.</blockquote>
+          <p>ARTIFACT 02 Reconstructed dialogue and silence based on memory; wording is approximate.</p><small>No
+            photograph of the original event is claimed.</small>
+        </aside>
+      </div>
+      <div class="container exchange-scene reveal">
+        <div class="scene-header"><span class="kicker">RECONSTRUCTED FROM MEMORY</span>
+          <h3>Replay the conversation</h3>
+          <p>Press next to reveal the words, one moment at a time.</p>
+        </div>
+        <div class="exchange-box">
+          <div class="exchange-scene-top"><span>STAIRCASE / CANADA</span><span id="stepCounter">01 / 04</span></div>
+          <div class="exchange-messages" id="exchangeMessages" aria-live="polite">
+            <p class="exchange-guide">A stranger trips on the staircase. You approach...</p>
+          </div>
+          <div class="exchange-actions"><button class="secondary-btn" id="resetExchange" type="button">↺
+              Restart</button><button class="solid-btn" id="nextExchange" type="button">Next moment <span
+                aria-hidden="true">→</span></button></div>
+        </div>
+        <p class="media-honesty">This interaction recreates the exchange from memory; it is not an original recording.
+        </p>
+      </div>
+      <div class="container story-grid section-space">
+        <div class="story-writing reveal">
+          <div class="section-small-number">03 / WHAT CHANGED</div>
+          <h3>The words changed.<br>The concern didn't.</h3>
+          <p class="story-copy">After that experience, I started using different expressions when someone hurt
+            themselves. I am now more likely to ask, “Are you okay?” or say, “I hope you weren’t hurt,” rather than
+            automatically saying “sorry.” I did not change because I stopped believing that people deserve sympathy. I
+            changed because I learned that people may not hear my concern in the words I grew up using. That is a small
+            example of how moving between cultures has made me more aware of my audience, even in situations where I
+            speak without planning. It also makes me wonder how many ordinary expressions carry meanings that people
+            around us do not recognize. I still associate “sorry” with concern because of my upbringing, but I now have
+            another way to express that same value. The choice is rhetorical: I adjust the wording to preserve my
+            purpose.</p>
+        </div>
+        <aside class="editorial-artifact" aria-label="ARTIFACT 03"><span>ARTIFACT 03 / RECONSTRUCTED MEMORY</span>
+          <blockquote>A word said out of concern.</blockquote>
+          <p>ARTIFACT 03 Visual comparison showing a shift in wording while the purpose—expressing concern—remains the
+            same.</p><small>No photograph of the original event is claimed.</small>
+        </aside>
+      </div>
+      <section class="container audio-invite sorry-audio reveal" id="sorryRecording" aria-labelledby="sorryVoiceTitle">
+        <div><span class="kicker">PERSONAL ARTIFACT / ORIGINAL AUDIO</span>
+          <h3 id="sorryVoiceTitle">Hear how concern sounds.</h3>
+          <p>In this new recording, I explain why I grew up using “sorry” to express concern, and how I began choosing
+            different words in Canada. It is my reflection on the encounter, not audio recorded at the staircase.</p>
+          <details class="sorry-transcript">
+            <summary>Read the audio script</summary>
+            <div class="transcript-text">
+              <p>Growing up in Nigeria, saying “sorry” doesn't always mean you're apologizing. Sometimes, it's just a
+                way of showing concern when someone gets hurt.</p>
+              <p>When I moved to Canada, I once said “sorry” to a stranger who fell on a staircase. He looked confused
+                and asked why I was apologizing when I hadn't done anything.</p>
+              <p>Since then, I've learned to say things like “Are you okay?” instead. The words changed, but my
+                intention to show concern stayed the same.</p>
+            </div>
+            <p class="audio-transcript-note">Text of the recording script. Check against the audio for any differences
+              before final submission.</p>
+          </details>
+        </div>
+        <div class="audio-status has-audio">
+          <div class="audio-card-top"><span>VOICE NOTE / 01</span><span>IN MY OWN WORDS</span></div>
+          <div class="audio-art" aria-hidden="true"><span class="audio-quote">“Sorry.”</span>
+            <div class="audio-wave">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+          </div>
+          <p class="audio-card-caption">The words changed.<br><em>The concern stayed.</em></p><audio controls
+            preload="metadata" aria-label="Personal reflection on saying sorry in Nigeria and Canada">
+            <source src="assets/audio/sorry-voice.mp3" type="audio/mpeg">
+          </audio><a class="audio-direct-link" href="assets/audio/sorry-voice.mp3">Open recording directly ↗</a><span
+            class="audio-card-foot">A personal reflection · Vincent Iyegbuye</span>
+        </div>
+      </section>
     </div>
-    <p class="voice-film-transcript-note">Transcript confirmed word for word by the speaker. The video is a reenactment of the remembered event.</p>
-   </details>
-  </div>
- </div>
-</section>
-</div>
-<section class="reflection-section section-space" id="reflection"><div class="container reflection-grid"><div class="reflection-left reveal"><span class="kicker">EPILOGUE / REFLECTION</span><h2>Sometimes I adapt.<br>Sometimes I <em>explain.</em></h2><p class="reflection-lead">Neither choice makes my voice less mine.</p></div><div class="reflection-right reveal"><p class="reflection-copy">Before moving abroad, I rarely had to think about why these familiar expressions made sense to me. The staircase encounter taught me that even an attempt to show concern can be misunderstood, while the phone call with my brother showed me that an unfamiliar expression can also start a friendly conversation. Both moments were shaped by audience, relationship, purpose, tone, and the fact that they happened in spoken conversation rather than on a page. I have learned that I do not always need to respond to cultural differences in the same way: sometimes I change my words, and sometimes I explain them. What matters to me is that I can keep the care, humor, and connection behind my Nigerian expressions even as I learn how to communicate in new places.</p><div class="reflection-switch"><p class="kicker">TWO DIFFERENT RESPONSES TO MISUNDERSTANDING</p><div class="reflect-buttons"><button type="button" class="reflect-option active" data-reflect="adapt" aria-pressed="true">I adapted ↗</button><button type="button" class="reflect-option" data-reflect="explain" aria-pressed="false">I explained ↗</button></div><div class="reflect-panel" id="reflectPanel" aria-live="polite"><span>AT THE STAIRCASE</span><p>“Are you okay?” replaced “Sorry,” even though my concern stayed the same.</p></div></div></div></div></section>
-<section class="statement-section" id="statement"><div class="container statement-layout"><div class="reveal"><span class="kicker">BEHIND THE CHOICES</span><h2>Why I told<br>the story <em>this way.</em></h2><p>My audience is my classmates. I chose to keep culturally specific expressions, show contrasting interpretations, and reveal the uncomfortable parts of the story—because those details explain how rhetoric operates in everyday life.</p><p class="statement-note">The final recording will use my own voice, with a transcript and actual classmate responses added after peer review.</p></div><div class="statement-video reveal"><div class="editorial-statement-placeholder"><strong>Statement of Choices</strong><p>The synthetic draft narration has been removed from this presentation. The final submission requires my own 1:30–2:00 recording and a transcript.</p></div><div class="video-label"><span>DRAFT STATEMENT OF CHOICES</span><span>1:30–2:00 REQUIRED</span></div><details class="transcript"><summary>Read the statement transcript <span aria-hidden="true">+</span></summary><p class="transcript-copy">For my language autoethnography, I wanted my classmates to understand that speaking the same language does not always mean we attach the same meaning to words. I tell two stories from my time in Canada: when a stranger questioned why I said “sorry” after he fell, and when my roommate misunderstood me joking with my brother over the phone. One language choice I made was keeping the expression “I will show you pepper” instead of immediately replacing it with “I will beat you.” I wanted classmates to hear how the phrase actually sounds in my everyday speech, and then understand the context. One detail I chose to include was the long silence after the stranger questioned my use of “sorry.” I think that silence matters because it shows how embarrassed and uncertain I felt, even though my intention was kind. A risk I took was sharing expressions that might sound aggressive or unusual without their Nigerian context. I tried to address that by including a reconstructed conversation and side-by-side explanations. I have not included a specific classmate response yet, so I plan to ask whether the phrase initially sounds threatening and whether my explanation changes that impression. I will revise this after peer review. Overall, I wanted the essay to show that sometimes I adapt my words so others understand me, and sometimes I explain my words so others understand where I come from.</p></details><details class="transcript"><summary>Read the main-points outline <span aria-hidden="true">+</span></summary><ul><li>Audience and goal: I want classmates to understand how the same English words can carry different cultural meanings.</li><li>Language choice: I kept “I will show you pepper” and “Abeg, shift” in Nigerian English so classmates encounter my natural expressions before reading explanations.</li><li>Content choice: I described the long silence after a stranger questioned my “sorry” because it shows my embarrassment and explains why I changed my wording.</li><li>Risk and design: My expressions could sound aggressive or confusing, so I added clearly labeled reconstructions, an audience diagram, and side-by-side interpretations.</li><li>Peer feedback: I will ask classmates whether the expression sounds threatening and whether the explanation changes their interpretation; I will report their actual comments after review.</li></ul></details></div></div></section>
-</main>
-<footer class="site-footer"><div class="container footer-layout"><div><span class="footer-mark">SW·DW</span><p>Same words. Different worlds.<br>One voice, learning when to adapt and when to explain.</p></div><div class="footer-links"><a href="#top">Back to top ↑</a><a href="#sorry">Experience 01</a><a href="#pepper">Experience 02</a></div><div class="footer-small">VINCENT IYEGBUYE<br>ENGL 1301-072<br>TEXAS TECH UNIVERSITY<br><span>Original interactive design informed by visual-essay and scrollytelling layouts.</span></div></div></footer>
-<dialog id="lightbox" class="lightbox" aria-label="Enlarged artifact"><button class="lightbox-close" type="button" aria-label="Close image">✕</button><img id="lightboxImage" alt="Enlarged view of selected artifact"></dialog>
-<script src="script.js" defer></script>
-<script src="enhancements.js" defer></script>
-<script src="media-controls.js" defer></script>
-<script>
-(function(){
-const photo=document.getElementById('canadaPhoto');
-const img=document.getElementById('canadaPhotoImage');
-if(!photo||!img)return;
-const show=()=>{if(img.naturalWidth>0)photo.hidden=false};
-if(img.complete)show(); else img.addEventListener('load',show,{once:true});
-})();
-</script>
-<script>
-(function(){
-const video=document.getElementById('pepperVideo'),fallback=document.getElementById('pepperVideoFallback');
-if(!video||!fallback)return;
-video.addEventListener('loadedmetadata',function(){video.hidden=false;fallback.hidden=true},{once:true});
-video.addEventListener('error',function(){video.hidden=true;fallback.hidden=false});
-video.load();
-})();
-</script>
-</body></html>
+    <section class="chapter-head second-head" id="pepper" aria-labelledby="pepperTitle">
+      <div class="chapter-head-inner container">
+        <div class="chapter-meta"><span>CHAPTER TWO</span><span class="meta-line"></span><span>HUMOR &amp;
+            BELONGING</span></div><span class="chapter-giant" aria-hidden="true">02</span>
+        <h2 id="pepperTitle">“I will show<br>you <em>pepper!</em>”</h2>
+        <p>A familiar joke between brothers sounds different to someone listening in.</p><a href="#pepperText"
+          class="chapter-scroll">READ CHAPTER <span aria-hidden="true">↘</span></a>
+      </div>
+    </section>
+    <div class="chapter-paper" id="pepperText">
+      <div class="container story-grid section-space">
+        <div class="story-writing reveal">
+          <div class="section-small-number">04 / ON THE PHONE</div>
+          <h3>Just a joke—until someone else heard it.</h3>
+          <p class="story-copy">Another experience in Canada showed me a very different response to a misunderstanding.
+            I was on a phone call with my brother, and we were joking and challenging each other the way we often do. At
+            one point I said, “Abeg, shift! You fit shout? I will show you pepper today! Oya, bring your card out make
+            we see!” The words were playful to us, even though they might sound confrontational to someone unfamiliar
+            with the expressions. My Canadian roommate was nearby and heard me talking. He asked why I wanted to put
+            pepper on my brother. I laughed because I had not considered that he might take “show you pepper” literally.
+            I explained that I did not mean actual pepper or physical harm. In that exchange, I meant that I was
+            jokingly going to give my brother a hard time or win our challenge. My roommate found the explanation funny,
+            and he told me he liked my accent and the way I spoke. Instead of ending in discomfort, that
+            misunderstanding became a conversation about a part of my culture.</p>
+        </div>
+        <aside class="editorial-artifact" aria-label="ARTIFACT 04"><span>ARTIFACT 04 / RECONSTRUCTED MEMORY</span>
+          <blockquote>Same words, different listeners.</blockquote>
+          <p>ARTIFACT 04 Reconstructed account.</p><small>No photograph of the original event is claimed.</small>
+        </aside>
+      </div>
+      <div class="container dialect-lab reveal" id="decodeMoment">
+        <div class="lab-header">
+          <div><span class="kicker">INTERACTIVE MOMENT 02</span>
+            <h3>Decode the <em>conversation.</em></h3>
+            <p>Tap each expression to reveal what it meant in the context of my conversation with my brother.</p>
+          </div><span class="lab-icon" aria-hidden="true">✳</span>
+        </div>
+        <div class="dialect-grid">
+          <div class="dialect-list" role="group" aria-label="Select a Nigerian expression"><button type="button"
+              class="dialect-choice active" data-phrase="0" aria-pressed="true"><span>01</span> Abeg, shift!<span
+                aria-hidden="true">↗</span></button><button type="button" class="dialect-choice" data-phrase="1"
+              aria-pressed="false"><span>02</span> You fit shout?<span aria-hidden="true">↗</span></button><button
+              type="button" class="dialect-choice" data-phrase="2" aria-pressed="false"><span>03</span> I will show you
+              pepper today!<span aria-hidden="true">↗</span></button><button type="button" class="dialect-choice"
+              data-phrase="3" aria-pressed="false"><span>04</span> Oya, bring your card out make we see!<span
+                aria-hidden="true">↗</span></button></div>
+          <div class="meaning-display" aria-live="polite"><span class="meaning-top">WHAT I WAS COMMUNICATING</span>
+            <h4 id="phraseTitle">“Abeg, shift!”</h4>
+            <p class="phrase-meaning" id="phraseMeaning">“Please, move!” — a familiar, playful dismissal between us.</p>
+            <p id="decodeStatus">0 of 4 expressions explored</p>
+            <div class="meaning-rule"></div>
+            <p id="phraseNuance">The teasing tone and our shared relationship mattered more than the literal words.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container interpretation-layout section-space">
+        <div class="reveal">
+          <aside class="editorial-artifact"><span>FIELD NOTE</span>
+            <blockquote>Memory is an artifact, too.</blockquote>
+            <p>Reconstructed from the writer’s recollection, not an original recording.</p>
+          </aside>
+        </div>
+        <div class="story-writing reveal">
+          <div class="section-small-number">05 / TWO AUDIENCES</div>
+          <h3>The listener changes the meaning.</h3>
+          <p class="story-copy">What makes that phone call interesting is that my brother was the person I intended to
+            communicate with, but my roommate became an unintended audience. With my brother, the genre was an informal,
+            teasing conversation built on our shared relationship. My tone was loud and playful, and my purpose was to
+            joke rather than threaten him. Because he understood the expressions and our relationship, I did not need to
+            explain every phrase. The phone call as a medium also mattered: my roommate could hear me speaking, but he
+            did not have the same access to my brother’s replies or the history behind our jokes. Without that context,
+            “I will show you pepper” sounded literal to him. I had to shift from teasing my brother to explaining my
+            language to my roommate. The words themselves did not change, but my stance did—from playful competitor to
+            patient interpreter. His curiosity gave me room to explain what the expression meant instead of treating his
+            confusion as a problem.</p>
+        </div>
+      </div>
+      <div class="container pov-lab reveal" id="audienceMoment">
+        <div class="lab-header">
+          <div><span class="kicker">INTERACTIVE MOMENT 03</span>
+            <h3>Same phrase.<br><em>Different ears.</em></h3>
+            <p>Select a listener to see how the audience shapes the meaning.</p>
+          </div><span class="lab-icon" aria-hidden="true">◉</span>
+        </div>
+        <div class="pov-grid">
+          <div class="pov-switch" role="group" aria-label="Select an audience"><button class="pov-option active"
+              data-pov="brother" aria-pressed="true"><span class="pov-emoji">✳</span><strong>My
+                brother</strong><small>Intended audience</small></button><button class="pov-option" data-pov="roommate"
+              aria-pressed="false"><span class="pov-emoji">◎</span><strong>My roommate</strong><small>Unintended
+                audience</small></button></div>
+          <div class="pov-display" aria-live="polite"><span id="povLabel">MY BROTHER HEARS</span>
+            <blockquote id="povQuote">“He's challenging me. We're just joking.”</blockquote>
+            <p id="povDetails">A familiar expression within a relationship built on teasing, shared language, and
+              context.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container story-grid reverse section-space">
+        <div class="story-writing reveal">
+          <div class="section-small-number">06 / CHOOSING TO EXPLAIN</div>
+          <h3>Not every misunderstanding needs a new vocabulary.</h3>
+          <p class="story-copy">Comparing these experiences has made me think about when I choose to adapt and when I
+            choose to explain. At the staircase, I stayed quiet because I felt embarrassed and did not know the stranger
+            well enough to continue the conversation. Afterward, I changed the words I used in similar situations.
+            During the phone call, I felt comfortable laughing and explaining because my roommate was familiar to me and
+            seemed curious rather than upset. That conversation reminded me that the way my brother and I speak is part
+            of our relationship, not just a collection of slang phrases. The joking tone, rhythm, and expressions help
+            us recognize each other’s intentions. I also appreciated that my roommate noticed my accent positively.
+            Living away from Nigeria can sometimes make familiar habits stand out in ways I did not expect, but standing
+            out does not always mean I have to hide them. Sometimes my choice is to make my language clearer, and
+            sometimes my choice is to invite another person to understand it.</p>
+        </div>
+        <aside class="editorial-artifact" aria-label="ARTIFACT 06"><span>ARTIFACT 06 / RECONSTRUCTED MEMORY</span>
+          <blockquote>Same words, different listeners.</blockquote>
+          <p>ARTIFACT 06 Audience map showing the brother as intended listener and roommate as unintended listener.</p>
+          <small>No photograph of the original event is claimed.</small>
+        </aside>
+      </div>
+      <section class="container voice-film reveal" id="brotherVideo" aria-labelledby="brotherVideoTitle">
+        <div class="voice-film-heading"><span class="kicker">PERSONAL ARTIFACT / VIDEO REENACTMENT</span>
+          <h3 id="brotherVideoTitle">Hear it in my own voice.</h3>
+          <p>In this recent recording, I revisit the language I used while joking with my brother. It is a reenactment
+            from memory, <strong>not a recording of the original call</strong>. Listen for the expression and consider
+            how an unfamiliar audience might interpret it.</p>
+        </div>
+        <div class="voice-film-panel">
+          <div class="voice-film-screen">
+            <div class="voice-film-toolbar"><span><i aria-hidden="true"></i> THE VOICE BEHIND THE
+                WORDS</span><span>PERSONAL ARCHIVE · 02</span></div>
+            <div class="voice-film-video-wrap">
+              <video id="pepperVideo" controls playsinline preload="metadata" width="960" height="540"
+                aria-label="Personal reenactment of the Nigerian expressions from my phone conversation" hidden>
+                <source src="assets/video/pepper-phone-call.mp4" type="video/mp4">
+                Your browser does not support MP4 video.
+              </video>
+              <div id="pepperVideoFallback" class="voice-film-fallback"><span
+                  aria-hidden="true">▶</span><strong>Personal video reenactment</strong>
+                <p>The recording will appear here when its MP4 file is uploaded.</p>
+              </div>
+            </div>
+            <div class="voice-film-caption"><span>MY VOICE. MY EXPRESSION.</span>
+              <p>Listen to the tone.<br><em>Then look beyond the words.</em></p><a href="#decodeMoment">Explore the
+                expressions <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="voice-film-notes"><span class="voice-film-number">02 / THE PHONE CALL</span>
+            <blockquote>“I will show you <em>pepper</em> today!”</blockquote>
+            <div class="voice-film-tags"><span>Playful tone</span><span>Shared context</span></div>
+            <p>In the remembered conversation with my brother, this was a playful challenge—not a threat involving
+              actual pepper. My Canadian roommate overheard only my side and interpreted it literally.</p>
+            <details>
+              <summary>Read context for the expression</summary>
+              <p><strong>Words I remember using:</strong> “Abeg, shift! You fit shout? I will show you pepper today!
+                Oya, bring your card out make we see!”</p>
+              <p><strong>Context:</strong> My brother and I were teasing each other over the phone. My roommate asked
+                why I wanted to put pepper on him, and I explained the figurative meaning. This account of the original
+                incident is reconstructed from memory; the new video is a reenactment.</p>
+            </details>
+            <details class="video-transcript" open>
+              <summary>Read the video transcript (word for word)</summary>
+              <div class="transcript-text">
+                <p>“Abeg, shift! You fit shout? I will show you pepper today! Oya, bring your card out make we see!”</p>
+                <p>This is something I said while joking with my brother on the phone. My Canadian roommate overheard me
+                  and asked why I wanted to put pepper on my brother.</p>
+                <p>I laughed and explained that I wasn't talking about actual pepper. It's just a playful Nigerian
+                  expression used to challenge or tease someone.</p>
+              </div>
+              <p class="voice-film-transcript-note">Transcript confirmed word for word by the speaker. The video is a
+                reenactment of the remembered event.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="reflection-section section-space" id="reflection">
+      <div class="container reflection-grid">
+        <div class="reflection-left reveal"><span class="kicker">EPILOGUE / REFLECTION</span>
+          <h2>Sometimes I adapt.<br>Sometimes I <em>explain.</em></h2>
+          <p class="reflection-lead">Neither choice makes my voice less mine.</p>
+        </div>
+        <div class="reflection-right reveal">
+          <p class="reflection-copy">Before moving abroad, I rarely had to think about why these familiar expressions
+            made sense to me. The staircase encounter taught me that even an attempt to show concern can be
+            misunderstood, while the phone call with my brother showed me that an unfamiliar expression can also start a
+            friendly conversation. Both moments were shaped by audience, relationship, purpose, tone, and the fact that
+            they happened in spoken conversation rather than on a page. I have learned that I do not always need to
+            respond to cultural differences in the same way: sometimes I change my words, and sometimes I explain them.
+            What matters to me is that I can keep the care, humor, and connection behind my Nigerian expressions even as
+            I learn how to communicate in new places.</p>
+          <div class="reflection-switch">
+            <p class="kicker">TWO DIFFERENT RESPONSES TO MISUNDERSTANDING</p>
+            <div class="reflect-buttons"><button type="button" class="reflect-option active" data-reflect="adapt"
+                aria-pressed="true">I adapted ↗</button><button type="button" class="reflect-option"
+                data-reflect="explain" aria-pressed="false">I explained ↗</button></div>
+            <div class="reflect-panel" id="reflectPanel" aria-live="polite"><span>AT THE STAIRCASE</span>
+              <p>“Are you okay?” replaced “Sorry,” even though my concern stayed the same.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="statement-section" id="statement">
+      <div class="container statement-layout">
+        <div class="reveal"><span class="kicker">BEHIND THE CHOICES</span>
+          <h2>Why I told<br>the story <em>this way.</em></h2>
+          <p>My audience is my classmates. I chose to keep culturally specific expressions, show contrasting
+            interpretations, and reveal the uncomfortable parts of the story—because those details explain how rhetoric
+            operates in everyday life.</p>
+          <p class="statement-note">The final recording will use my own voice, with a transcript and actual classmate
+            responses added after peer review.</p>
+        </div>
+        <div class="statement-video reveal">
+          <div class="editorial-statement-placeholder"><strong>Statement of Choices</strong>
+            <p>The synthetic draft narration has been removed from this presentation. The final submission requires my
+              own 1:30–2:00 recording and a transcript.</p>
+          </div>
+          <div class="video-label"><span>DRAFT STATEMENT OF CHOICES</span><span>1:30–2:00 REQUIRED</span></div>
+          <details class="transcript">
+            <summary>Read the statement transcript <span aria-hidden="true">+</span></summary>
+            <p class="transcript-copy">For my language autoethnography, I wanted my classmates to understand that
+              speaking the same language does not always mean we attach the same meaning to words. I tell two stories
+              from my time in Canada: when a stranger questioned why I said “sorry” after he fell, and when my roommate
+              misunderstood me joking with my brother over the phone. One language choice I made was keeping the
+              expression “I will show you pepper” instead of immediately replacing it with “I will beat you.” I wanted
+              classmates to hear how the phrase actually sounds in my everyday speech, and then understand the context.
+              One detail I chose to include was the long silence after the stranger questioned my use of “sorry.” I
+              think that silence matters because it shows how embarrassed and uncertain I felt, even though my intention
+              was kind. A risk I took was sharing expressions that might sound aggressive or unusual without their
+              Nigerian context. I tried to address that by including a reconstructed conversation and side-by-side
+              explanations. I have not included a specific classmate response yet, so I plan to ask whether the phrase
+              initially sounds threatening and whether my explanation changes that impression. I will revise this after
+              peer review. Overall, I wanted the essay to show that sometimes I adapt my words so others understand me,
+              and sometimes I explain my words so others understand where I come from.</p>
+          </details>
+          <details class="transcript">
+            <summary>Read the main-points outline <span aria-hidden="true">+</span></summary>
+            <ul>
+              <li>Audience and goal: I want classmates to understand how the same English words can carry different
+                cultural meanings.</li>
+              <li>Language choice: I kept “I will show you pepper” and “Abeg, shift” in Nigerian English so classmates
+                encounter my natural expressions before reading explanations.</li>
+              <li>Content choice: I described the long silence after a stranger questioned my “sorry” because it shows
+                my embarrassment and explains why I changed my wording.</li>
+              <li>Risk and design: My expressions could sound aggressive or confusing, so I added clearly labeled
+                reconstructions, an audience diagram, and side-by-side interpretations.</li>
+              <li>Peer feedback: I will ask classmates whether the expression sounds threatening and whether the
+                explanation changes their interpretation; I will report their actual comments after review.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <div><span class="footer-mark">SW·DW</span>
+        <p>Same words. Different worlds.<br>One voice, learning when to adapt and when to explain.</p>
+      </div>
+      <div class="footer-links"><a href="#top">Back to top ↑</a><a href="#sorry">Experience 01</a><a
+          href="#pepper">Experience 02</a></div>
+      <div class="footer-small">VINCENT IYEGBUYE<br>ENGL 1301-072<br>TEXAS TECH UNIVERSITY<br><span>Original interactive
+          design informed by visual-essay and scrollytelling layouts.</span></div>
+    </div>
+  </footer>
+  <dialog id="lightbox" class="lightbox" aria-label="Enlarged artifact"><button class="lightbox-close" type="button"
+      aria-label="Close image">✕</button><img id="lightboxImage" alt="Enlarged view of selected artifact"></dialog>
+  <script src="script.js" defer></script>
+  <script src="enhancements.js" defer></script>
+  <script src="media-controls.js" defer></script>
+  <script>
+    (function () {
+      const photo = document.getElementById('canadaPhoto');
+      const img = document.getElementById('canadaPhotoImage');
+      if (!photo || !img) return;
+      const show = () => { if (img.naturalWidth > 0) photo.hidden = false };
+      if (img.complete) show(); else img.addEventListener('load', show, { once: true });
+    })();
+  </script>
+  <script>
+    (function () {
+      const video = document.getElementById('pepperVideo'), fallback = document.getElementById('pepperVideoFallback');
+      if (!video || !fallback) return;
+      video.addEventListener('loadedmetadata', function () { video.hidden = false; fallback.hidden = true }, { once: true });
+      video.addEventListener('error', function () { video.hidden = true; fallback.hidden = false });
+      video.load();
+    })();
+  </script>
+</body>
+
+</html>
