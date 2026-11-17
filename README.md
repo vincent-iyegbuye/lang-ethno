@@ -33,3 +33,6 @@ https://vincent-iyegbuye.github.io/lang-ethno/
 ## Design references
 
 The editorial approach was informed by examples of student image essays and digital storytelling, particularly the [Multimodal Exchange](https://multi-modal-exchange.com/image/) and its [digital storytelling gallery](https://multi-modal-exchange.com/digital-storytelling/). The design is original and does not reproduce their template code.
+
+## Canada photo (approved for publication)
+The introduction includes a personal archive photograph taken in Canada. Upload the optimized file `canada-winter.webp` to `assets/images/canada-winter.webp`. The image section automatically appears when that exact asset exists, so it won't display as a broken image beforehand. The caption explicitly does not claim the photo depicts either language incident.
