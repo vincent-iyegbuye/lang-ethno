@@ -213,3 +213,9 @@ em { color: var(--green); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* Personal archive, 2026-11-16. Original photo: no filters or AI processing. */
+.personal-archive-photo {margin: 28px 0 32px;max-width:760px;border:0;padding:0}
+.personal-archive-photo img {display:block;width:100%;height:auto;max-height:550px;object-fit:contain;background:#e3e6e2;border:1px solid var(--line,#d4d8ce)}
+.personal-archive-photo figcaption {border-bottom:1px solid var(--line,#d4d8ce);padding:12px 0 16px;line-height:1.6;color:var(--muted,#60675f);font-size:.81rem}
+.personal-archive-photo figcaption span {display:block;color:var(--green,#355b46);font-size:.66rem;font-weight:700;letter-spacing:.12em;margin-bottom:5px}
