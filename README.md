@@ -36,3 +36,6 @@ The editorial approach was informed by examples of student image essays and digi
 
 ## Canada photo (approved for publication)
 The introduction includes a personal archive photograph taken in Canada. Upload the optimized file `canada-winter.webp` to `assets/images/canada-winter.webp`. The image section automatically appears when that exact asset exists, so it won't display as a broken image beforehand. The caption explicitly does not claim the photo depicts either language incident.
+
+## Original video reenactment
+The website now contains a responsive player for `assets/video/pepper-phone-call.mp4` within Chapter Two. The video is an approximately 26-second personal reenactment, not a recording of the original phone conversation. A context panel explains the remembered dialogue and rhetorical purpose without pretending to transcribe the recording exactly. Until that MP4 is uploaded, a plain fallback message appears instead of a broken player. Add accurate captions or a transcript before the final class submission.
